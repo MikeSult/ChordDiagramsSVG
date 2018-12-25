@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Mike Sult">
+<title>Basic Chords</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="ChordsSVG.css">
+
+<script src="chordDiagram.js"></script>
+
+</head>
+<body>
+<h1>Basic Chords</h1>
+<p>The page shows diagrams for the basic chords used on guitar.  These chords are the suitable for beginning guitar players and should be thought of as an essential core of material that the beginning guitar should try to master.</p>
+
+<h2>Major chords</h2>
+<div class="chordGroup">
+<p>This first group are major chords</p>
+<span class="col-md-2">A Major</span>
+<span class="col-md-2">C Major</span>
+<span class="col-md-2">D Major</span>
+<span class="col-md-2">E Major</span>
+<span class="col-md-4">G Major</span>
+
+<span id="chord1-1" class="col-md-2"></span>
+<span id="chord1-2" class="col-md-2"></span>
+<span id="chord1-3" class="col-md-2"></span>
+<span id="chord1-4" class="col-md-2"></span>
+<span id="chord1-5" class="col-md-4"></span>
+</div>
+
+<h2>Minor chords</h2>
+<div class="chordGroup">
+<p>This second group are minor chords</p>
+<span class="col-md-2">A Minor</span>
+<span class="col-md-2">B Minor</span>
+<span class="col-md-2">C Minor</span>
+<span class="col-md-2">D Minor</span>
+<span class="col-md-4">E Minor</span>
+
+<span id="chord2-1" class="col-md-2"></span>
+<span id="chord2-2" class="col-md-2"></span>
+<span id="chord2-3" class="col-md-2"></span>
+<span id="chord2-4" class="col-md-2"></span>
+<span id="chord2-5" class="col-md-4"></span>
+</div>
+<p>.</p>
+
+<h2>Dominant 7th chords</h2>
+<div class="chordGroup">
+<p>This third group are Dominant 7th chords, commonly labeled with simply the number 7 (i.e. A7)</p>
+<span class="col-md-2">A7</span>
+<span class="col-md-2">B7</span>
+<span class="col-md-2">C7</span>
+<span class="col-md-2">D7</span>
+<span class="col-md-2">E7</span>
+<span class="col-md-2">G7</span>
+
+<span id="chord3-1" class="col-md-2"></span>
+<span id="chord3-2" class="col-md-2"></span>
+<span id="chord3-3" class="col-md-2"></span>
+<span id="chord3-4" class="col-md-2"></span>
+<span id="chord3-5" class="col-md-2"></span>
+<span id="chord3-6" class="col-md-2"></span>
+</div>
+
+<h2>Major 7th chords</h2>
+<p>This fourth group are Major 7th chords, commonly labeled with Maj7, Ma7 or ma7 (i.e. Ama7)</p>
+<div class="chordGroup">
+<span class="col-md-2">Ama7</span>
+<span class="col-md-2">Cma7</span>
+<span class="col-md-2">Dma7</span>
+<span class="col-md-2">Ema7</span>
+<span class="col-md-2">Fma7</span>
+<span class="col-md-2">Gma7</span>
+
+<span id="chord4-1" class="col-md-2"></span>
+<span id="chord4-2" class="col-md-2"></span>
+<span id="chord4-3" class="col-md-2"></span>
+<span id="chord4-4" class="col-md-2"></span>
+<span id="chord4-5" class="col-md-2"></span>
+<span id="chord4-6" class="col-md-2"></span>
+</div>
+
+
+<h2>Minor 7th chords</h2>
+<p>This fifth group are Minor 7th chords, commonly labeled with min7, mi7 or m7 (i.e. Am7)</p>
+<div class="chordGroup">
+<span class="col-md-2">Am7</span>
+<span class="col-md-2">Bm7</span>
+<span class="col-md-2">Dm7</span>
+<span class="col-md-2">Em7</span>
+<span class="col-md-2">Fm7 (using barre)</span>
+<span class="col-md-2">Gm7 (using barre)</span>
+
+<span id="chord5-1" class="col-md-2"></span>
+<span id="chord5-2" class="col-md-2"></span>
+<span id="chord5-3" class="col-md-2"></span>
+<span id="chord5-4" class="col-md-2"></span>
+<span id="chord5-5" class="col-md-2"></span>
+<span id="chord5-6" class="col-md-2"></span>
+</div>
+
+
+<h2>Beginning Barre chords</h2>
+<p>This sixth group are some of the first barre chords to learn.  The first finger lays across the strings to fret more than one string at the same fret (this is the 'barre' technique).  The other fingers fret the remaining notes in the normal manner (using the fingertip)</p>
+<div class="chordGroup">
+<span class="col-md-3">F (4 string)</span>
+<span class="col-md-3">F (6 string)</span>
+<span class="col-md-3">F#m</span>
+<span class="col-md-3">Bm</span>
+
+<span id="chord6-1" class="col-md-3"></span>
+<span id="chord6-2" class="col-md-3"></span>
+<span id="chord6-3" class="col-md-3"></span>
+<span id="chord6-4" class="col-md-3"></span>
+</div>
+<p><a href="BarreChords.html" target="_blank">More information about Barre Chords</a></p>
+
+<script>
+ChordDiagram([null,0,2,2,2,0],[5,0],5,"chord1-1");
+ChordDiagram([null,3,2,0,1,0],[5,3],5,"chord1-2");
+ChordDiagram([null,null,0,2,3,2],[4,0],5,"chord1-3");
+ChordDiagram([0,2,2,1,0,0],[6,0],5,"chord1-4");
+ChordDiagram([3,2,0,0,0,3],[6,3],5,"chord1-5");
+
+ChordDiagram([null,0,2,2,1,0],[5,0],5,"chord2-1");
+ChordDiagram([null,null,4,4,3,2],[3,4],5,"chord2-2");
+ChordDiagram([null,null,5,5,4,3],[3,5],6,"chord2-3");
+ChordDiagram([null,null,0,2,3,1],[4,0],5,"chord2-4");
+ChordDiagram([0,2,2,0,0,0],[6,0],5,"chord2-5");
+
+ChordDiagram([null,0,2,0,2,0],[5,0],5,"chord3-1");
+ChordDiagram([null,2,1,2,0,2],[5,2],5,"chord3-2");
+ChordDiagram([null,3,2,3,1,0],[5,3],5,"chord3-3");
+ChordDiagram([null,null,0,2,1,2],[4,0],5,"chord3-4");
+ChordDiagram([0,2,0,1,0,0],[6,0],5,"chord3-5");
+ChordDiagram([3,2,0,0,0,1],[6,3],5,"chord3-6");
+
+ChordDiagram([null,0,2,1,2,0],[5,0],5,"chord4-1");
+ChordDiagram([null,3,2,0,0,0],[5,3],5,"chord4-2");
+ChordDiagram([null,null,0,2,2,2],[4,0],5,"chord4-3");
+ChordDiagram([0,2,1,1,0,0],[6,0],5,"chord4-4");
+ChordDiagram([null,null,3,2,1,0],[4,3],5,"chord4-5");
+ChordDiagram([3,null,0,0,0,2],[6,3],5,"chord4-6");
+
+ChordDiagram([null,0,2,0,1,0],[5,0],5,"chord5-1");
+ChordDiagram([null,2,0,2,0,2],[5,2],5,"chord5-2");
+ChordDiagram([null,null,0,2,1,1],[4,0],5,"chord5-3");
+ChordDiagram([0,2,0,0,0,0],[6,0],5,"chord5-4");
+ChordDiagram([null,null,1,1,1,1],[1,1],5,"chord5-5");
+ChordDiagram([null,null,3,3,3,3],[1,3],5,"chord5-6");
+
+ChordDiagram([null,null,3,2,1,1],[4,3],5,"chord6-1");
+ChordDiagram([1,3,3,2,1,1],[6,1],5,"chord6-2");
+ChordDiagram([2,4,4,2,2,2],[6,2],5,"chord6-3");
+ChordDiagram([null,2,4,4,3,2],[5,2],5,"chord6-4");
+
+</script>
+
+<div id="footer"></div>
+<script src="lastModified.js"></script>
+</body>
+</html>

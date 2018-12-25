@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Mike Sult">
+<title>Rootless Voicings</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="ChordsSVG.css">
+
+<script src="chordDiagram.js"></script>
+
+</head>
+<body>
+<h1>Rootless Voicings</h1>
+<p>Once you have some fluency with the seventh chord voicings, you can add extensions to those chords by replacing either the root or the fifth (or both) with a ninth or thirteenth respectively.  These alterations work especially well with the voicings that are inversions (not root position).  It is common to add ninths, elevenths and thirteenths to dominant 7th chords.  Below show some of the common alterations to the first inversion dominant 7th chord.  It is possible to the play the root (marked with the white circle) of many of these chords but they are effective even without the root.  Notice that several of the shapes are exactly like seventh chords of a different root. (i.e. rootless C9 = Em7b5, rootless C7b9 = Edim7).  Also notice that a b13 is the same note as a #5, different names for the same sound.</p>
+<div class="chordGroup">
+<span class="col-md-2">C7</span>
+<span class="col-md-2">C9<br>(9 replaces root)</span>
+<span class="col-md-2">C7b9<br>(b9 replaces root)</span>
+<span class="col-md-2">C13<br>(13 replaces fifth)<br>(9 replaces root)</span>
+<span class="col-md-4">C13b9<br>(13 replaces fifth)<br>(b9 replaces root)</span>
+
+<span id="chord1-1" class="col-md-2"></span>
+<span id="chord1-2" class="col-md-2"></span>
+<span id="chord1-3" class="col-md-2"></span>
+<span id="chord1-4" class="col-md-2"></span>
+<span id="chord1-5" class="col-md-4"></span>
+
+<span class="col-md-2">C7b9b13<br>(b13 replaces fifth)<br>(b9 replaces root)</span>
+<span class="col-md-2">C9b13<br>(b13 replaces fifth)<br>(9 replaces root)</span>
+<span class="col-md-2">C7#9<br>(#9 replaces root)</span>
+<span class="col-md-2">C7#9#5<br>(#5 replaces fifth)<br>(#9 replaces root)</span>
+<span class="col-md-4">C7#9b5<br>(b5 replaces fifth)<br>(#9 replaces root)</span>
+
+
+<span id="chord2-1" class="col-md-2"></span>
+<span id="chord2-2" class="col-md-2"></span>
+<span id="chord2-3" class="col-md-2"></span>
+<span id="chord2-4" class="col-md-2"></span>
+<span id="chord2-5" class="col-md-4"></span>
+</div>
+
+
+<script>
+ChordDiagram([null,null,2,3,1,3],[2,1],6,"chord1-1");
+ChordDiagram([null,null,2,3,3,3],[5,3],6,"chord1-2");
+ChordDiagram([null,null,2,3,2,3],[5,3],6,"chord1-3");
+ChordDiagram([null,null,2,3,3,5],[5,3],6,"chord1-4");
+ChordDiagram([null,null,2,3,2,5],[5,3],6,"chord1-5");
+
+ChordDiagram([null,null,2,3,2,4],[5,3],6,"chord2-1");
+ChordDiagram([null,null,2,3,3,4],[5,3],6,"chord2-2");
+ChordDiagram([null,null,2,3,4,3],[5,3],6,"chord2-3");
+ChordDiagram([null,null,2,3,4,4],[5,3],6,"chord2-4");
+ChordDiagram([null,null,2,3,4,2],[5,3],6,"chord2-5");
+
+
+</script>
+
+
+
+
+
+<div id="footer"></div>
+<script src="lastModified.js"></script>
+</body>
+</html>

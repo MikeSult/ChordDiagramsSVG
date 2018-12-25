@@ -1,0 +1,66 @@
+/* ChordsSVG.css */
+html {
+    font-size: 10px;
+}
+
+body {
+/*    margin-left: 20px; */
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-width: 480px;    
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+/*    border: 3px solid #007700; */
+}
+
+
+#footer {
+    font-size: 1em;
+    color: #0000dd;
+}
+
+div {
+/*    background-color: #f4f4ff; */
+}
+
+.chordGroup {
+/*    background-color: #f4f4ff; */
+}
+
+span {
+/*    text-align: center; */
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    color: #9999ff;
+    text-shadow: 1px 2px 3px black;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+}
+
+
+p {
+    font-size: 1.2em;
+    background-color: #ffffff;
+}
+
+ul {
+  font-size: 1.2em;
+}
+
+ol {
+  font-size: 1.2em;
+}
+
+a:hover {     
+  background: orange;
+}
+
+
