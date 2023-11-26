@@ -91,9 +91,10 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
     }
 
     // draw the root circle
-    var yRootLoc = String((fretWidth * root[1])-dotOffset+yOffset)
-	htmlCode += "<circle cx='"+ String(xOffset + (stringSpacing * (6-root[0]) )) +"' cy='"+ yRootLoc +"' r='"+dotSizeRoot+"' stroke='black' stroke-width='1' fill='"+openDotColor+"' />";
-
+    if(root.length==2){
+        var yRootLoc = String((fretWidth * root[1])-dotOffset+yOffset)
+	    htmlCode += "<circle cx='"+ String(xOffset + (stringSpacing * (6-root[0]) )) +"' cy='"+ yRootLoc +"' r='"+dotSizeRoot+"' stroke='black' stroke-width='1' fill='"+openDotColor+"' />";
+    }
     // draw the dots
     ignoreThisString = false;
     // string 6
@@ -112,7 +113,8 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
         }
     } else {
         // draw an X on this string
-        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 0)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+//        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 0)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+        htmlCode += "<text x='"+ String(xOffset/1.3 + (stringSpacing * 0)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
     }
     ignoreThisString = false;
     // string 5
@@ -131,7 +133,8 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
         }
     } else {
         // draw an X on this string
-        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 1)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+//        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 1)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+        htmlCode += "<text x='"+ String(xOffset/1.3 + (stringSpacing * 1)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
     }
     ignoreThisString = false;
     // string 4
@@ -150,7 +153,8 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
         }
     } else {
         // draw an X on this string
-        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 2)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+//        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 2)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+        htmlCode += "<text x='"+ String(xOffset/1.3 + (stringSpacing * 2)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
     }
     ignoreThisString = false;
     // string 3
@@ -169,8 +173,9 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
         }
     } else {
         // draw an X on this string
-        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 3)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
-    }
+//        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 3)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+        htmlCode += "<text x='"+ String(xOffset/1.3 + (stringSpacing * 3)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+}
     ignoreThisString = false;
     // string 2
     if(dots[4] !== null) {
@@ -188,7 +193,8 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
         }
     } else {
         // draw an X on this string
-        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 4)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+//        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 4)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+        htmlCode += "<text x='"+ String(xOffset/1.3 + (stringSpacing * 4)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
     }
     ignoreThisString = false;
     // string 1
@@ -207,7 +213,8 @@ function ChordDiagram(dots, root, numberOfFrets, id, offsetFret) {
         }
     } else {
         // draw an X on this string
-        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 5)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+//        htmlCode += "<text x='"+ String(xOffset/2 + (stringSpacing * 5)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
+        htmlCode += "<text x='"+ String(xOffset/1.3 + (stringSpacing * 5)) +"' y='"+ omitStringLoc +"' fill='black'>X</text>";
     }
 
     // draw the optional fret number
